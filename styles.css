@@ -1,0 +1,173 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: 'Roboto', sans-serif;
+  src: url(https://fonts.googleapis.com/css?family=Roboto&display=swap);
+}
+
+.toDoContainer {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+  width: 100%;
+}
+
+.todoWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f4f4f4;
+  border: solid 1px #f4f4f4;
+  border-radius: 5px;
+  padding: 0px 24px;
+  width: 85%;
+}
+
+.toDoContainer div h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 40px;
+  width: 100%;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.addTodoInput {
+  width: 100%;
+  padding-left: 10px;
+  background-color: transparent;
+  border-bottom: solid 1px #333;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+}
+
+.addTodoBTN {
+  border: none;
+  background-color: transparent;
+  color: #000;
+}
+
+.addTodoBTN:disabled,
+.addTodoBTN[disabled]{
+  opacity: 0.4;
+}
+
+
+.toggleSearchBar {
+  color: rgb(215, 81, 24);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.searchTaskWrapper {
+  display: none;
+}
+
+.searchInput {
+  width: 100%;
+  height: 35px;
+  background-color: transparent;
+  border-bottom: solid 1px #333;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+}
+
+.closeSearchBarBTN {
+  border: none;
+  background-color: transparent;
+  color: #000;
+}
+
+.deleteBTN {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.deleteBTN:hover {
+  color: #000;
+}
+
+#todo_lists {
+  padding-inline-start: 0;
+  width: 100%;
+  margin: 14px;
+}
+
+.taskCards {
+  background-color: rgb(215, 81, 24);
+  border-radius: 5px;
+}
+
+#todo_lists li{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+#todo_lists li input {
+  background-color:transparent;
+  padding: 10px;
+  color: #fff;
+  border: 0;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  width: 75%;
+  outline: none;
+}
+
+.addTaskWrapper {
+  margin-bottom: 8px;
+}
+
+@media only screen and (min-width: 768px) {
+  .toDoContainer { 
+    margin: 24px 5px;
+  }
+
+  .todoWrapper {
+    width: 50%;
+  }
+
+  form {
+    width: 80%;
+  }
+
+  .toDoContainer div h1 {
+    font-size: 70px;
+  }
+
+  .addTodoInput, .searchInput {
+    font-size: 24px;
+  }
+
+  .searchTaskWrapper {
+    margin-bottom: 3%;
+  }
+  
+  #todo_lists {
+    width: 80%;
+    margin-bottom: 5%;
+  }
+
+  #todo_lists li input { 
+    font-size: 20px;
+  }
+} 
