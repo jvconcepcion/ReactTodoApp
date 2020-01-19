@@ -1,4 +1,4 @@
 # ReactTodoApp
 ReactJs Todo App
 
-Demo link: https://hungry-curie-e6cccb.netlify.com/
+Demo link: https://quirky-lalande-d634ca.netlify.com/
